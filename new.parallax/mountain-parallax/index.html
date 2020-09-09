@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <section class="zoom">
+    <img src="./images/mountain1.png" id="layer1" />
+    <img src="./images/mountain2.png" id="layer2" />
+    <img src="images/text.png" id="text" />
+  </section>
+
+  <section class="content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti laborum dolorem enim, hic amet nisi dicta! Nam adipisci, et fuga magni nostrum quis quos sint numquam corporis voluptas atque.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti laborum dolorem enim, hic amet nisi dicta! Nam adipisci, et fuga magni nostrum quis quos sint numquam corporis voluptas atque.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti laborum dolorem enim, hic amet nisi dicta! Nam adipisci, et fuga magni nostrum quis quos sint numquam corporis voluptas atque.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti laborum dolorem enim, hic amet nisi dicta! Nam adipisci, et fuga magni nostrum quis quos sint numquam corporis voluptas atque.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti laborum dolorem enim, hic amet nisi dicta! Nam adipisci, et fuga magni nostrum quis quos sint numquam corporis voluptas atque.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti laborum dolorem enim, hic amet nisi dicta! Nam adipisci, et fuga magni nostrum quis quos sint numquam corporis voluptas atque.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti laborum dolorem enim, hic amet nisi dicta! Nam adipisci, et fuga magni nostrum quis quos sint numquam corporis voluptas atque.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti laborum dolorem enim, hic amet nisi dicta! Nam adipisci, et fuga magni nostrum quis quos sint numquam corporis voluptas atque.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti laborum dolorem enim, hic amet nisi dicta! Nam adipisci, et fuga magni nostrum quis quos sint numquam corporis voluptas atque.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti laborum dolorem enim, hic amet nisi dicta! Nam adipisci, et fuga magni nostrum quis quos sint numquam corporis voluptas atque.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti laborum dolorem enim, hic amet nisi dicta! Nam adipisci, et fuga magni nostrum quis quos sint numquam corporis voluptas atque.
+  </section>
+
+
+  <script>
+    let layer1 = document.getElementById('layer1');
+    let layer2 = document.getElementById('layer2');
+    let text = document.getElementById('text')
+
+    let scroll = window.pageYOffset; 
+    document.addEventListener('scroll', () => {
+      let offset = window.pageYOffset; 
+      scroll = offset; 
+      layer1.style.width = `${100 + scroll/5}%`; 
+      layer2.style.width = `${100 + scroll/5}%`;
+      layer2.style.left = `${scroll/50}%`;
+      text.style.top = `${-scroll/20}%`;
+    })
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
